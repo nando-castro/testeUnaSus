@@ -313,6 +313,8 @@ header span {
 
 #section-formacoes {
     /* display: flex; */
+    background: #e9eef5;
+    padding: 100px;
 }
 
 #section-formacoes h1 {
@@ -402,6 +404,89 @@ header span {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+/* Fundamentos */
+
+#section-fundamentos {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-fundamentos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+}
+
+.content-fundamento {
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    gap: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #f8f9fa;
+    /* padding: 20px 0; */
+    text-align: center;
+}
+
+.container-footer {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-footer div:first-child {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.container-footer div:first-child img {
+    width: 150px;
+    height: auto;
+    padding: 10px;
+}
+
+.container-footer div:last-child {
+    background-color: #0070c0;
+    color: white;
+    padding: 20px;
+    width: 100%;
+}
+
+.container-footer div:last-child img {
+    width: 250px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.container-footer h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.container-footer p {
+    font-size: 14px;
+    margin: 5px 0;
 }
 
 
