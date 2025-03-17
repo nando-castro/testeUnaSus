@@ -237,7 +237,6 @@ header span {
     border-radius: 20px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
     background-color: white;
-    /* padding: 20px; */
 }
 
 
@@ -312,7 +311,6 @@ header span {
 /* FORMAÇÕES */
 
 #section-formacoes {
-    /* display: flex; */
     background: #e9eef5;
     padding: 100px;
 }
@@ -337,7 +335,6 @@ header span {
     border-radius: 20px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
     background-color: white;
-    /* padding: 20px; */
     display: flex;
     flex-direction: row;
 }
@@ -369,7 +366,6 @@ header span {
     padding-top: 50px;
     font-size: 0.8rem;
     padding-left: 10px;
-    /* background: green; */
 }
 
 #formacao-descricao {
@@ -395,8 +391,6 @@ header span {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* padding: 20px; */
-    /* justify-content: space-between; */
 }
 
 #formacao-img {
@@ -441,12 +435,10 @@ header span {
 
 footer {
     background-color: #f8f9fa;
-    /* padding: 20px 0; */
     text-align: center;
 }
 
 .container-footer {
-    /* max-width: 1200px; */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
