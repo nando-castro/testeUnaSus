@@ -20,12 +20,12 @@
 
     <header>
         <div class="section-top">
-            <div class="section-options">
-                <p>Ir para o conteúdo <span class="select-number">1</span></p>
-                <p>Ir para o menu <span class="select-number">2</span></p>
-                <p>Ir para a busca <span class="select-number">3</span></p>
-                <p>Ir para o rodapé <span class="select-number">4</span></p>
-            </div>
+            <nav class="section-options section-options-left" aria-label="Opções de acessibilidade">
+                <a href="#section-conteudo">Ir para o conteúdo <span class="select-number">1</span></a>
+                <a href="#section-menu">Ir para o menu <span class="select-number">2</span></a>
+                <a href="#section-busca">Ir para a busca <span class="select-number">3</span></a>
+                <a href="#section-rodape">Ir para o rodapé <span class="select-number">4</span></a>
+            </nav>
 
             <div class="section-options section-options-right">
                 <p>Mapa do site</p>
@@ -39,7 +39,7 @@
             </div>
             <div class="section-menu-nav">
                 <div class="search-container">
-                    <input class="menu-search-input" type="text" placeholder="Pesquisar" />
+                    <input class="menu-search-input" id="section-busca" type="text" placeholder="Pesquisar" />
                     <span class="search-icon">🔍</span>
                 </div>
                 <nav class="menu-nav">
@@ -56,9 +56,128 @@
         </div>
     </header>
 
-    <main></main>
+    <main>
+        <section class="container-section" id="section-conteudo">
+            <div id="content-images-infos">
+                <h1>Conheça o novo curso de Formação para Gerentes de Serviços de Especialidades em Saúde Bucal</h1>
+                <p>A formação tem como objetivo que os gerentes dos CEOs consigam aplicar conceitos, princípios e
+                    métodos da construção social das políticas de saúde no Brasil e para entender sua interface com
+                    a
+                    estruturação da Política Nacional de Saúde Bucal.</p>
+                <button>Saiba mais</button>
+            </div>
+            <!-- <div id="content-images-conteudo">
+                </div> -->
+        </section>
+        <section class="container-section" id="section-cursos">
+            <h1>Cursos</h1>
+            <div class="content-cursos">
+                <div class="container-curso">
+                    <!-- <div id="curso-img"></div> -->
+                    <img src="./images/curso1.png" alt="curso1" />
+                    <p>Curso</p>
+                    <h2>Formação para Gerentes de Serviços de Especialidades em Saúde Bucal</h2>
+                    <div id="curso-infos">
+                        <div id="curso-descricao">
+                            <span>6 módulos</span>
+                            <span>48 recursos</span>
+                            <span>240 horas</span>
+                        </div>
+                        <button>Saiba mais</button>
+                    </div>
+                </div>
+                <div class="container-curso">
+                    <!-- <div id="curso-img"></div> -->
+                    <img src="./images/curso2.png" alt="curso2" />
+                    <p>Curso</p>
+                    <h2>Formação para Gerentes de Serviços de Especialidades em Saúde Bucal</h2>
+                    <div id="curso-infos">
+                        <div id="curso-descricao">
+                            <span>6 módulos</span>
+                            <span>48 recursos</span>
+                            <span>240 horas</span>
+                        </div>
+                        <button>Saiba mais</button>
+                    </div>
+                </div>
+                <div class="container-curso">
+                    <!-- <div id="curso-img"></div> -->
+                    <img src="./images/curso3.png" alt="curso3" />
+                    <p>Curso</p>
+                    <h2>Formação para Gerentes de Serviços de Especialidades em Saúde Bucal</h2>
+                    <div id="curso-infos">
+                        <div id="curso-descricao">
+                            <span>6 módulos</span>
+                            <span>48 recursos</span>
+                            <span>240 horas</span>
+                        </div>
+                        <button>Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-button-all">
+                <button class="content-button-all">Ver todos os cursos abertos</button>
+            </div>
+        </section>
+        <section class="container-section">
+            <h1>Programas de formação</h1>
+            <div>
+                <div>
+                    <div></div>
+                    <h2>Programa 1</h2>
+                    <p>Descrição do programa 1</p>
+                    <div>
+                        <div>
+                            <span>6 módulos</span>
+                            <span>48 recursos</span>
+                            <span>240 horas</span>
+                        </div>
+                        <button>Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+            <button>Ver todos os programas abertos</button>
+        </section>
+        <section class="container-section">
+            <div>
+                <div>
+                    <img src="./images/icon1.png" alt="inovacao" width="50px" />
+                    <h1>Inovação</h1>
+                    <p>Construa conexões por meio de um ambiente inovador, acessível em Libras e disponível em todas as
+                        plataformas digitais.</p>
+                </div>
+                <div>
+                    <img src="./images/icon2.png" alt="inovacao" width="50px" />
+                    <h1>Autonomia</h1>
+                    <p>Escolha onde e quando estudar. Com o SAITE AVA você tem autonomia
+                        para buscar conhecimento.</p>
+                </div>
+                <div>
+                    <img src="./images/icon3.png" alt="inovacao" width="50px" />
+                    <h1>Interatividade</h1>
+                    <p>Aprenda por meio de diversos recursos, que vão além dos e-books interativos. Tenha acesso a
+                        vídeos, infográficos, games, audiobooks, podcasts e muito mais!</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <footer></footer>
+    <footer>
+        <section class="container-footer" id="section-rodape">
+            <div>
+                <img src="./images/UNASUS.png" alt="Logo UNASUS" width="150px" />
+                <img src="./images/logo_vertical.png" alt="Logo UnaSus" width="150px" />
+                <img src="./images/logoufma.jpg" alt="Logo UFMA" width="150px" />
+                <img src="./images/saite.svg" alt="Logo SAITE" width="150px" />
+            </div>
+            <div>
+                <img src="./images/logo-white.png" alt="logo saiteava" width="150px" />
+                <h2>Orgulhosamente desenvolvido pelo Grupo SAITE</h2>
+                <p>Termos de Uso</p>
+                <p>Política de Privacidade</p>
+            </div>
+        </section>
+    </footer>
 
 </body>
 
