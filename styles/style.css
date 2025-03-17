@@ -1,0 +1,226 @@
+/*
+CORES
+
+#043463
+#0d7cce
+#e9f1f8
+#e9eef5
+#ffffff
+
+font-family: 'Inter', sans-serif;
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* HEADER */
+header {
+    background-color: #043463;
+    color: white;
+}
+
+/* BARRA SUPERIOR */
+.section-top {
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.section-options {
+    display: flex;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.section-options-right p {
+    padding: 0 10px;
+}
+
+header p {
+    font-size: 0.75rem;
+}
+
+header span {
+    color: #043463;
+    background-color: white;
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.6rem;
+}
+
+/* MENU */
+.section-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.section-menu-logo img {
+    width: 200px;
+    height: auto;
+}
+
+.section-menu-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* PESQUISA */
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.menu-search-input {
+    width: 240px;
+    height: 40px;
+    padding: 0 40px 0 15px;
+    background-color: #043463;
+    color: white;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.menu-search-input::placeholder {
+    color: white;
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+}
+
+/* MENU LINKS */
+.menu-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.menu-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.menu-nav a:hover {
+    color: #0d7cce;
+}
+
+/* BOTÃO ACESSAR */
+.menu-search-button button {
+    background-color: white;
+    color: #043463;
+    border: none; 
+    border-radius: 50px; 
+    padding: 10px 20px; 
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu-search-button button:hover {
+    background-color: #f0f0f0;
+}
+
+/* MENU RESPONSIVO */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+    .menu-search-input {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-top {
+        flex-direction: column;
+        height: auto;
+        padding: 8px;
+    }
+
+    .section-options {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .section-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .section-menu-nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .section-menu-nav.active {
+        display: flex;
+    }
+
+    .menu-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .menu-search-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-search-input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-search-input {
+        width: 100%;
+    }
+
+    .menu-search-button button {
+        width: 100%;
+    }
+
+    .section-options {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
